@@ -16,8 +16,7 @@ bot.on('message', async event => {
 
   if (event.message.type === 'text') {
     if (event.message.text === '空氣品質') {
-      const airQuality = await getAir()
-      event.reply(airQuality)
+      await getAir(event)
     } else if (event.message.type === 'text') {
       event.reply(event.message.text)
     }
