@@ -15,11 +15,8 @@ bot.on('message', async event => {
   }
 
   if (event.message.type === 'text') {
-    if (event.message.text === '空氣品質') {
-      await getAir(event)
-    } else if (event.message.type === 'text') {
-      event.reply(event.message.text)
-    }
+    // 直接將用戶輸入的文字傳給 getAir 函數處理
+    await getAir(event)
   }
 })
 
