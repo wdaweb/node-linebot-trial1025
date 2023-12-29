@@ -13,7 +13,7 @@ export const getAir = async (event) => {
       return
     }
 
-    const flexMessages = filteredRecords.slice(0, 10).map(record => {
+    const flexMessages = filteredRecords.slice(0, 5).map(record => {
       const { sitename, county, status, 'pm2.5': pm25, datacreationdate } = record
       const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCu8DP8vVN3uYmseQ8U-GPhyZ6mpV1uCxorg&usqp=CAU'
 
